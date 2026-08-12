@@ -12,6 +12,10 @@
 //    (You can also just paste a URL as a string instead of importing a
 //    local file, if your image is already hosted somewhere.)
 // ─────────────────────────────────────────────────────────────────────────
+import HomeScreen from '../assets/projects/home_screen.png';
+import MusicList from '../assets/projects/music_list.png';
+import PlayerInterface from '../assets/projects/player_interface.png';
+
 
 export interface Project {
   number: string; // e.g. "01"
@@ -29,15 +33,15 @@ export interface Project {
 export const projects: Project[] = [
   {
     number: '01',
-    name: 'Nextlevel Studio',
-    category: 'Client',
-    liveUrl: '#',
+    name: 'Music Player',
+    category: 'Personal',
+    liveUrl: 'https://music--player.up.railway.app/',
     col1Image1:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85',
+      HomeScreen,
     col1Image2:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85',
+      MusicList,
     col2Image:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png&w=1280&q=85',
+      PlayerInterface,
   },
   {
     number: '02',
