@@ -4,7 +4,12 @@ import ContactButton from "./ContactButton";
 // import useFitWidth from "..assets/useFitWidth";
 import portrait from "../assets/portrait1.png";
 
-const NAV_LINKS = ["About", "Price", "Projects", "Contact"];
+const NAV_LINKS = [
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
 
 export default function HeroSection() {
   return (
@@ -15,13 +20,13 @@ export default function HeroSection() {
       {/* Navbar */}
       <FadeIn delay={0} y={-20} as="nav">
         <div className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8">
-          {NAV_LINKS.map((link) => (
+          {NAV_LINKS.map(({ label, href }) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={label}
+              href={href}
               className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200"
             >
-              {link}
+              {label}
             </a>
           ))}
         </div>

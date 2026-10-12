@@ -11,6 +11,22 @@ npm run dev
 
 Then open the local URL it prints (usually http://localhost:5173).
 
+## Contact form email delivery
+
+The contact form sends messages through the Vercel serverless function in
+`api/contact.js`. Configure these environment variables in the Vercel project
+settings:
+
+- `RESEND_API_KEY` — a Resend API key. Keep it server-side; never add it to
+  client code or a `VITE_` variable.
+- `RESEND_FROM_EMAIL` — optional. Set this to a sender address on a domain
+  verified in Resend. If omitted, the function uses Resend's onboarding sender.
+
+The function sends inquiries to `ronniemuworozi@gmail.com`. For local end-to-end
+testing, run the app with the Vercel CLI (`vercel dev`) and configure the same
+environment variables locally. The regular Vite dev server does not run
+serverless functions.
+
 To build for production:
 
 ```bash

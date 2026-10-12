@@ -12,10 +12,12 @@
 //    (You can also just paste a URL as a string instead of importing a
 //    local file, if your image is already hosted somewhere.)
 // ─────────────────────────────────────────────────────────────────────────
-import HomeScreen from '../assets/projects/home_screen.png';
-import MusicList from '../assets/projects/music_list.png';
-import PlayerInterface from '../assets/projects/player_interface.png';
-
+import HomeScreen from "../assets/projects/home_screen.png";
+import MusicList from "../assets/projects/music_list.png";
+import PlayerInterface from "../assets/projects/player_interface.png";
+import BottomImage from "../assets/projects/bottom.png";
+import TopImage from "../assets/projects/top.png";
+import MidImage from "../assets/projects/mid.png";
 
 export interface Project {
   number: string; // e.g. "01"
@@ -32,41 +34,35 @@ export interface Project {
 // point at temporary placeholder art so the layout has something to show.
 export const projects: Project[] = [
   {
-    number: '01',
-    name: 'Music Player',
-    category: 'Personal',
-    liveUrl: 'https://music--player.up.railway.app/',
-    col1Image1:
-      HomeScreen,
-    col1Image2:
-      MusicList,
-    col2Image:
-      PlayerInterface,
+    number: "01",
+    name: "Music Player",
+    category: "Personal",
+    liveUrl: "https://music--player.up.railway.app/",
+    col1Image1: HomeScreen,
+    col1Image2: MusicList,
+    col2Image: PlayerInterface,
   },
   {
-    number: '02',
-    name: 'Aura Brand Identity',
-    category: 'Personal',
-    liveUrl: '#',
-    col1Image1:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85',
-    col1Image2:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85',
-    col2Image:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&w=1280&q=85',
+    number: "02",
+    name: "Air frost Engineering Solutions",
+    category: "Client",
+    liveUrl: "http://www.airfrostengineering.com",
+    col1Image1: MidImage,
+    col1Image2: TopImage,
+    col2Image: BottomImage,
   },
-  {
-    number: '03',
-    name: 'Solaris Digital',
-    category: 'Client',
-    liveUrl: '#',
-    col1Image1:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85',
-    col1Image2:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png&w=1280&q=85',
-    col2Image:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&w=1280&q=85',
-  },
+  // {
+  //   number: "03",
+  //   name: "Solaris Digital",
+  //   category: "Client",
+  //   liveUrl: "#",
+  //   col1Image1:
+  //     "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85",
+  //   col1Image2:
+  //     "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png&w=1280&q=85",
+  //   col2Image:
+  //     "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&w=1280&q=85",
+  // },
 
   // ── Add your next project here when it's ready ──────────────────────
   // {
